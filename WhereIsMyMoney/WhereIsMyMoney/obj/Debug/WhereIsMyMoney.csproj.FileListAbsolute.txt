@@ -1,0 +1,15 @@
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\WhereIsMyMoney.exe.config
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\WhereIsMyMoney.exe
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\WhereIsMyMoney.pdb
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csprojAssemblyReference.cache
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\MainWindow.g.cs
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\App.g.cs
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney_MarkupCompile.cache
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney_MarkupCompile.lref
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\MainWindow.baml
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.g.resources
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.Properties.Resources.resources
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csproj.GenerateResource.cache
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csproj.CoreCompileInputs.cache
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.exe
+C:\Users\Geri\Documents\GitHub\SzoftechBeadand-\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.pdb
