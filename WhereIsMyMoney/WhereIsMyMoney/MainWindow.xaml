@@ -15,6 +15,7 @@
     <Window.Resources>
 
         <!--// Toggle Button Style Template //-->
+        <!--tesz-->
 
         <ImageBrush x:Key="tb_mouse_over"
                     ImageSource="Resources/toggle.png"/>
