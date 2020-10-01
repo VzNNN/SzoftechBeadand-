@@ -13,6 +13,8 @@ Ami kell bele:
 -Kimenő pénz ugyan így
 	-Kimenő pénz típusok (hitel, számla, wow kieg)
 	-Egyszeri, folyamatos
+	-Keresés
 -Megtakarítás kalkuláció
 -Grafikonok
 -Deviza árfolyam
+
