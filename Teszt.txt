@@ -1,3 +1,18 @@
 Ez egy file ide írjatok pullrequestet pls
 HAHÓ
 HALÓ
+
+
+Sziasztok. Amire gondoltam egy ösztöndíj/fizetés nyomontartó appot kéne írni.
+
+Ami kell bele:
+
+-Bejövő pénz nyomonkövetése (egyszerű beviteli mezőkön)
+	-Bejövő pénz típusok (fizetés, hitel)
+	-Egyszeri, folyamatos
+-Kimenő pénz ugyan így
+	-Kimenő pénz típusok (hitel, számla, wow kieg)
+	-Egyszeri, folyamatos
+-Megtakarítás kalkuláció
+-Grafikonok
+-Deviza árfolyam
