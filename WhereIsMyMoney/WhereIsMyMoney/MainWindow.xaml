@@ -17,6 +17,7 @@
         <!--// Toggle Button Style Template //-->
         <!--tesz-->
         <!--tesz-->
+        <!--szia-->
 
         <ImageBrush x:Key="tb_mouse_over"
                     ImageSource="Resources/toggle.png"/>
