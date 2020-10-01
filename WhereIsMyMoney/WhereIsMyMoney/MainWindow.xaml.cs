@@ -24,5 +24,25 @@ namespace WhereIsMyMoney
         {
             InitializeComponent();
         }
+
+        private void CloseBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Tg_Btn_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Tg_Btn_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ListViewItem_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
