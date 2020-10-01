@@ -15,10 +15,7 @@
     <Window.Resources>
 
         <!--// Toggle Button Style Template //-->
-        <!--tesz-->
-        <!--tesz-->
-        <!--tesz2-->
-        <!--teszt3-->
+
         <ImageBrush x:Key="tb_mouse_over"
                     ImageSource="Resources/toggle.png"/>
 
@@ -44,7 +41,7 @@
         </Style>
 
         <!--// Tooltip Style Template //-->
-        <!--dasdasfasdfasdf-->
+        
         <Style TargetType="ToolTip" x:Key="tt_style">
 
             <Setter Property="Placement" Value="Right"/>
