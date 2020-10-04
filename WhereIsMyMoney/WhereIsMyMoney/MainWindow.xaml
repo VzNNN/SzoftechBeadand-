@@ -179,7 +179,9 @@
                     <RowDefinition Height="60"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-
+<ContentControl Content="{Binding SelectedViewModel}"
+                Grid.Column="0"
+                Grid.Row="2"/>
                 <Button x:Name="CloseBtn"
                         Grid.Column="1"
                         Grid.Row="1"
@@ -324,16 +326,19 @@
                         <!--// Home //-->
 
                         <ListViewItem HorizontalAlignment="Left"
-                                      Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter"
-                                      >
+                                      Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter">
 
                             <StackPanel Orientation="Horizontal"
                                         Width="230">
 
                                 <Image Source="Resources/home.png"
                                        Stretch="Fill"
-                                       Margin="6,0,0,0"/>
-
+                                       Margin="6,0,0,0">
+                                    <Image.InputBindings>
+                                        <MouseBinding Gesture="LeftClick" Command="{Binding UpdateViewCommand}" CommandParameter="Home"/>
+                                    </Image.InputBindings>
+                                </Image>
+                               
                                 <TextBlock Text="Home"
                                            Margin="25,0,0,0"
                                            Style="{StaticResource font_style}"/>
@@ -363,7 +368,11 @@
 
                                 <Image Source="Resources/income.png"
                                        Stretch="Fill"
-                                       Margin="6,0,0,0"/>
+                                       Margin="6,0,0,0">
+                                    <Image.InputBindings>
+                                        <MouseBinding Gesture="LeftClick" Command="{Binding UpdateViewCommand}" CommandParameter="Incomes"/>
+                                    </Image.InputBindings>
+                                </Image>
 
                                 <TextBlock Text="Incomes"
                                            Margin="25,0,0,0"
@@ -394,7 +403,11 @@
 
                                 <Image Source="Resources/outcome.png"
                                        Stretch="Fill"
-                                       Margin="6,0,0,0"/>
+                                       Margin="6,0,0,0">
+                                    <Image.InputBindings>
+                                        <MouseBinding Gesture="LeftClick" Command="{Binding UpdateViewCommand}" CommandParameter="Outcomes"/>
+                                    </Image.InputBindings>
+                                </Image>
 
                                 <TextBlock Text="Outcome"
                                            Margin="25,0,0,0"
@@ -425,7 +438,11 @@
 
                                 <Image Source="Resources/save.png"
                                        Stretch="Fill"
-                                       Margin="6,0,0,0"/>
+                                       Margin="6,0,0,0">
+                                    <Image.InputBindings>
+                                        <MouseBinding Gesture="LeftClick" Command="{Binding UpdateViewCommand}" CommandParameter="Saves"/>
+                                    </Image.InputBindings>
+                                </Image>
 
                                 <TextBlock Text="Saves"
                                            Margin="25,0,0,0"
@@ -456,7 +473,11 @@
 
                                 <Image Source="Resources/graph.png"
                                        Stretch="Fill"
-                                       Margin="6,0,0,0"/>
+                                       Margin="6,0,0,0">
+                                    <Image.InputBindings>
+                                        <MouseBinding Gesture="LeftClick" Command="{Binding UpdateViewCommand}" CommandParameter="Graphs"/>
+                                    </Image.InputBindings>
+                                </Image>
 
                                 <TextBlock Text="Graphs"
                                            Margin="25,0,0,0"
@@ -487,7 +508,11 @@
 
                                 <Image Source="Resources/change.png"
                                        Stretch="Fill"
-                                       Margin="6,0,0,0"/>
+                                       Margin="6,0,0,0">
+                                    <Image.InputBindings>
+                                        <MouseBinding Gesture="LeftClick" Command="{Binding UpdateViewCommand}" CommandParameter="Exchanges"/>
+                                    </Image.InputBindings>
+                                </Image>
 
                                 <TextBlock Text="ExChange"
                                            Margin="25,0,0,0"

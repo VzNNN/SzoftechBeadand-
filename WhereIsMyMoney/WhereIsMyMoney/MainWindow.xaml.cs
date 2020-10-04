@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WhereIsMyMoney.ViewModel;
 
 namespace WhereIsMyMoney
 {
@@ -23,6 +24,7 @@ namespace WhereIsMyMoney
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
         }
 
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
