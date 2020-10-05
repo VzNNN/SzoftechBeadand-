@@ -46,5 +46,15 @@ namespace WhereIsMyMoney
         {
 
         }
+
+        private void DayNightSetBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LanguageSetBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

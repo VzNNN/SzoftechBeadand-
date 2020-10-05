@@ -177,6 +177,16 @@
   <ItemGroup>
     <Resource Include="Resources\outcome.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\eng.png" />
+    <Resource Include="Resources\hun.png" />
+    <Resource Include="Resources\sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\enghun.png" />
+    <Resource Include="Resources\moon.png" />
+    <Resource Include="Resources\sunmoon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
