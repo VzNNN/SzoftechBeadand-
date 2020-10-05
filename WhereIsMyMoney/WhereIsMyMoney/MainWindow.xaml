@@ -243,7 +243,7 @@
         <Grid Background="LightGray">
 
 
-            <!--// App Close Button //-->
+            
 
             <Grid>
 
@@ -260,9 +260,17 @@
                     <RowDefinition Height="60"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
+
+             <!--// Selected View //-->
+
                 <ContentControl Content="{Binding SelectedViewModel}"
-                Grid.Column="0"
-                Grid.Row="2"/>
+                                Grid.Column="0"
+                                Grid.Row="2"
+                                Grid.ColumnSpan="5"
+                                Margin="70,0,0,0"/>
+
+            <!--// App Close Button //-->
+                
                 <Button x:Name="CloseBtn"
                         Grid.Column="3"
                         Grid.Row="1"
