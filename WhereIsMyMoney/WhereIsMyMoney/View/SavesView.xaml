@@ -29,7 +29,8 @@
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
         <Label Grid.Row="0"
                    Grid.Column="1"
@@ -66,6 +67,17 @@
             <ListBoxItem>ListBox Item #2</ListBoxItem>
             <ListBoxItem>ListBox Item #3</ListBoxItem>
         </ListBox>
-        
+        <StackPanel Grid.Row="8"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="3">
+            <Label HorizontalAlignment="Center" FontSize="24" Content="XXXXXXX FT"/>
+            <DockPanel VerticalAlignment="Center" Margin="10">
+                <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="40" />
+                <Slider  Minimum="1" Maximum="12" IsSnapToTickEnabled="True" TickPlacement="BottomRight" TickFrequency="1" Name="slValue" />
+            </DockPanel>
+        </StackPanel>
+        <Button  Grid.Row="9"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="3" Content="Calculate"/>
     </Grid>
 </UserControl>

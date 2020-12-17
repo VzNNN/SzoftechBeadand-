@@ -29,7 +29,8 @@
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
         <Label Grid.Row="0"
                    Grid.Column="1"
@@ -57,13 +58,26 @@
         <Label Grid.Row="6"
                    Grid.Column="1"
                    FontWeight="Bold">Date:</Label>
-        <StackPanel Margin="10"
+        <StackPanel Orientation="Vertical"
+                    Margin="10"
                     Grid.Row="8"
                     Grid.Column="1">
             <Label FontWeight="Bold">Is reapeatable?</Label>
-            <RadioButton>Yes</RadioButton>
-            <RadioButton>No</RadioButton>
+            <StackPanel Orientation="Vertical">
+                <RadioButton>None</RadioButton>
+                <RadioButton>Day</RadioButton>
+                <RadioButton>Week</RadioButton>
+                <RadioButton>Month</RadioButton>
+                <RadioButton>Half Year</RadioButton>
+                <RadioButton>Year</RadioButton>
+            </StackPanel>
         </StackPanel>
+        <Button x:Name="bttnSubmit" 
+                Content="Add Outcomes"
+                Grid.Column="1"
+                Grid.Row="9">
+
+        </Button>
         <ListBox Grid.Row="2"
                  Grid.Column="3"
                  Grid.RowSpan="7">
