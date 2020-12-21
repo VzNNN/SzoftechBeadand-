@@ -153,3 +153,38 @@ C:\Users\Gergely Horvath\Source\Repos\SzoftechBeadand\WhereIsMyMoney\WhereIsMyMo
 C:\Users\Gergely Horvath\Source\Repos\SzoftechBeadand\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csproj.CopyComplete
 C:\Users\Gergely Horvath\Source\Repos\SzoftechBeadand\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.exe
 C:\Users\Gergely Horvath\Source\Repos\SzoftechBeadand\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.pdb
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\WhereIsMyMoney.exe.config
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\WhereIsMyMoney.exe
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\WhereIsMyMoney.pdb
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\EntityFramework.dll
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\EntityFramework.xml
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csprojAssemblyReference.cache
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\MainWindow.g.cs
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\ExchangesView.g.cs
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\GraphsView.g.cs
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\HomeView.g.cs
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\IncomesView.g.cs
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\OutcomesView.g.cs
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\SavesView.g.cs
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\App.g.cs
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney_MarkupCompile.cache
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney_MarkupCompile.lref
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\App.baml
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\MainWindow.baml
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\ExchangesView.baml
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\GraphsView.baml
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\HomeView.baml
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\IncomesView.baml
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\OutcomesView.baml
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\SavesView.baml
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.g.resources
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.Properties.Resources.resources
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csproj.GenerateResource.cache
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csproj.CoreCompileInputs.cache
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csproj.Fody.CopyLocal.cache
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csproj.CopyComplete
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.exe
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.pdb

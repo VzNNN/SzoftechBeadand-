@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\
+C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\obj\Release\
 WhereIsMyMoney
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyMoney\WhereIsMyMoney\App.xaml
 7-780266405
 
@@ -16,5 +16,5 @@ C:\Users\horva\_Egyetem\5. felev\Szoftverfejlesztes technologiak\bead\WhereIsMyM
 17-183154381
 MainWindow.xaml;View\ExchangesView.xaml;View\GraphsView.xaml;View\HomeView.xaml;View\IncomesView.xaml;View\OutcomesView.xaml;View\SavesView.xaml;
 
-False
+True
 
