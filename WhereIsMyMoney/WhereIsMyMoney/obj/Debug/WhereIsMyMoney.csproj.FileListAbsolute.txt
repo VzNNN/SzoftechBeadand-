@@ -153,3 +153,39 @@ C:\Users\Gergely Horvath\Source\Repos\SzoftechBeadand\WhereIsMyMoney\WhereIsMyMo
 C:\Users\Gergely Horvath\Source\Repos\SzoftechBeadand\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csproj.CopyComplete
 C:\Users\Gergely Horvath\Source\Repos\SzoftechBeadand\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.exe
 C:\Users\Gergely Horvath\Source\Repos\SzoftechBeadand\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.pdb
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\WhereIsMyMoney.exe.config
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\WhereIsMyMoney.exe
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\WhereIsMyMoney.pdb
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\EntityFramework.dll
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\EntityFramework.xml
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\MainWindow.g.cs
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\ExchangesView.g.cs
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\GraphsView.g.cs
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\HomeView.g.cs
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\IncomesView.g.cs
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\OutcomesView.g.cs
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\SavesView.g.cs
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\App.g.cs
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney_MarkupCompile.cache
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney_MarkupCompile.lref
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\App.baml
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\MainWindow.baml
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\ExchangesView.baml
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\GraphsView.baml
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\HomeView.baml
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\IncomesView.baml
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\OutcomesView.baml
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\View\SavesView.baml
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.g.resources
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.Properties.Resources.resources
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csproj.GenerateResource.cache
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csproj.CoreCompileInputs.cache
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csproj.Fody.CopyLocal.cache
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csproj.CopyComplete
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.exe
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.pdb
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney_Content.g.cs
+D:\Programok\SzoftechBeadando\WhereIsMyMoney\WhereIsMyMoney\obj\Debug\WhereIsMyMoney.csprojAssemblyReference.cache

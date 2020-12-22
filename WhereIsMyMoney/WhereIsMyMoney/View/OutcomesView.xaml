@@ -53,23 +53,14 @@
         <Label Grid.Row="4"
                    Grid.Column="1"
                    FontWeight="Bold">Category:</Label>
-        <DatePicker Grid.Row="7"
-                    Grid.Column="1"></DatePicker>
-        <Label Grid.Row="6"
-                   Grid.Column="1"
-                   FontWeight="Bold">Date:</Label>
         <StackPanel Orientation="Vertical"
                     Margin="10"
                     Grid.Row="8"
                     Grid.Column="1">
-            <Label FontWeight="Bold">Is reapeatable?</Label>
+            <Label FontWeight="Bold">Duration in months:</Label>
             <StackPanel Orientation="Vertical">
-                <RadioButton>None</RadioButton>
-                <RadioButton>Day</RadioButton>
-                <RadioButton>Week</RadioButton>
-                <RadioButton>Month</RadioButton>
-                <RadioButton>Half Year</RadioButton>
-                <RadioButton>Year</RadioButton>
+                <Slider  Minimum="1" Maximum="12" IsSnapToTickEnabled="True" TickPlacement="BottomRight" TickFrequency="1" Name="slValue" />
+                <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" TextAlignment="Right" Width="20" />
             </StackPanel>
         </StackPanel>
         <Button x:Name="bttnSubmit" 
@@ -78,13 +69,13 @@
                 Grid.Row="9">
 
         </Button>
-        <ListBox Grid.Row="2"
-                 Grid.Column="3"
-                 Grid.RowSpan="7">
-            <ListBoxItem>ListBox Item #1</ListBoxItem>
-            <ListBoxItem>ListBox Item #2</ListBoxItem>
-            <ListBoxItem>ListBox Item #3</ListBoxItem>
-        </ListBox>
+        <DataGrid ItemsSource="{Binding Path=Outcomes}" Foreground="Black" Background="LightGray" Width="auto" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" Grid.Column="3" Grid.RowSpan="7">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Value" Binding="{Binding Value}"/>
+                <DataGridTextColumn Header="Type" Binding="{Binding Type}"/>
+                <DataGridTextColumn Header="Duration" Binding="{Binding Duration}"/>
+            </DataGrid.Columns>
+        </DataGrid>
 
     </Grid>
 </UserControl>

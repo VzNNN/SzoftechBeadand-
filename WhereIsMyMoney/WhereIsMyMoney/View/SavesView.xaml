@@ -60,21 +60,25 @@
             <ListBoxItem>ListBox Item #2</ListBoxItem>
             <ListBoxItem>ListBox Item #3</ListBoxItem>
         </ListBox>
-        <ListBox Grid.Row="2"
-                 Grid.Column="3"
-                 Grid.RowSpan="6">
-            <ListBoxItem>ListBox Item #1</ListBoxItem>
-            <ListBoxItem>ListBox Item #2</ListBoxItem>
-            <ListBoxItem>ListBox Item #3</ListBoxItem>
-        </ListBox>
+        <DataGrid ItemsSource="{Binding Path=Incomes}" Foreground="DarkGreen" Background="LightGray" Width="auto" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" Grid.Column="1" Grid.RowSpan="6">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Value" Binding="{Binding Value}"/>
+                <DataGridTextColumn Header="Type" Binding="{Binding Type}"/>
+                <DataGridTextColumn Header="Duration" Binding="{Binding Duration}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid ItemsSource="{Binding Path=Outcomes}" Foreground="DarkRed" Background="LightGray" Width="auto" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" Grid.Column="3" Grid.RowSpan="6">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Value" Binding="{Binding Value}"/>
+                <DataGridTextColumn Header="Type" Binding="{Binding Type}"/>
+                <DataGridTextColumn Header="Duration" Binding="{Binding Duration}"/>
+            </DataGrid.Columns>
+        </DataGrid>
         <StackPanel Grid.Row="8"
                     Grid.Column="1"
                     Grid.ColumnSpan="3">
             <Label HorizontalAlignment="Center" FontSize="24" Content="XXXXXXX FT"/>
-            <DockPanel VerticalAlignment="Center" Margin="10">
-                <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="40" />
-                <Slider  Minimum="1" Maximum="12" IsSnapToTickEnabled="True" TickPlacement="BottomRight" TickFrequency="1" Name="slValue" />
-            </DockPanel>
+            
         </StackPanel>
         <Button  Grid.Row="9"
                     Grid.Column="1"

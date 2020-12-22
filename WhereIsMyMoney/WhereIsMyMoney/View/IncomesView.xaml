@@ -2,11 +2,11 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:WhereIsMyMoney.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    
+
     <!--Have to remove it just for testing-->
     
     <Grid Background="LightGray">
@@ -41,51 +41,44 @@
                    HorizontalAlignment="Center"
                    FontWeight="Bold">Incomes</Label>
         <TextBox Grid.Row="3"
-                 Grid.Column="1"/>
+                 Grid.Column="1"
+                 Text="{Binding Path=CurrentIncome.Value, Mode=TwoWay}"/>
         <Label Grid.Row="2"
                    Grid.Column="1"
                    FontWeight="Bold">Value:</Label>
         <ComboBox Grid.Row="5"
-                  Grid.Column="1">
-            <ComboBoxItem>ComboBox Item #1</ComboBoxItem>
-            <ComboBoxItem IsSelected="True">ComboBox Item #2</ComboBoxItem>
-            <ComboBoxItem>ComboBox Item #3</ComboBoxItem>
+                  Grid.Column="1" SelectedValuePath="Content" SelectedValue="{Binding Path=CurrentIncome.Type, Mode=TwoWay}">
+            <ComboBoxItem Content="Ösztöndij"/>
+            <ComboBoxItem Content="Támogatás"/>
+            <ComboBoxItem Content="Fizetés"/>
         </ComboBox>
         <Label Grid.Row="4"
                    Grid.Column="1"
-                   FontWeight="Bold">Category:</Label>
-        <DatePicker Grid.Row="7"
-                    Grid.Column="1"></DatePicker>
-        <Label Grid.Row="6"
-                   Grid.Column="1"
-                   FontWeight="Bold">Date:</Label>
+                   FontWeight="Bold">Type:</Label>
+        
         <StackPanel Orientation="Vertical"
                     Margin="10"
                     Grid.Row="8"
                     Grid.Column="1">
-            <Label FontWeight="Bold">Is reapeatable?</Label>
+            <Label FontWeight="Bold">Duration in months:</Label>
             <StackPanel Orientation="Vertical">
-                <RadioButton>None</RadioButton>
-                <RadioButton>Day</RadioButton>
-                <RadioButton>Weak</RadioButton>
-                <RadioButton>Month</RadioButton>
-                <RadioButton>Half Year</RadioButton>
-                <RadioButton>Year</RadioButton>
+                <Slider  Minimum="1" Maximum="12" IsSnapToTickEnabled="True" TickPlacement="BottomRight" TickFrequency="1" Name="slValue" Value="{Binding Path=CurrentIncome.Duration, Mode=TwoWay}" />
+                <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" TextAlignment="Right" Width="20" />
             </StackPanel>
         </StackPanel>
         <Button x:Name="bttnSubmit" 
                 Content="Add Incomes"
                 Grid.Column="1"
-                Grid.Row="9">
-            
-        </Button>
-        <ListBox Grid.Row="2"
-                 Grid.Column="3"
-                 Grid.RowSpan="7">
-            <ListBoxItem>ListBox Item #1</ListBoxItem>
-            <ListBoxItem>ListBox Item #2</ListBoxItem>
-            <ListBoxItem>ListBox Item #3</ListBoxItem>
-        </ListBox>
+                Grid.Row="9" Command="{Binding Path=addCommand}">
 
+        </Button>
+        <Label x:Name="Message" Grid.Column="1" Grid.Row="10" Content="{Binding Path=Message}"/>
+        <DataGrid ItemsSource="{Binding Path=Incomes}" Foreground="Black" Background="LightGray" Width="auto" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" Grid.Column="3" Grid.RowSpan="7">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Value" Binding="{Binding Path=Value, Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Type" Binding="{Binding Path=Type, Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Duration" Binding="{Binding Path=Duration, Mode=TwoWay}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </UserControl>

@@ -51,6 +51,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -70,7 +72,34 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Command\UpdateViewCommand.cs" />
-    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="Models\Incomes.cs">
+      <DependentUpon>MoneyDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IncomesEnum.cs" />
+    <Compile Include="Models\IncomeService.cs" />
+    <Compile Include="Models\MoneyDBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoneyDBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MoneyDBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoneyDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MoneyDBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoneyDBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MoneyDTO.cs" />
+    <Compile Include="Models\Outcomes.cs">
+      <DependentUpon>MoneyDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OutcomesEnum.cs" />
+    <Compile Include="Models\OutcomeService.cs" />
+    <Compile Include="ViewModel\Base\BaseViewModel.cs" />
+    <Compile Include="ViewModel\Base\CommandManager.cs" />
     <Compile Include="ViewModel\ExchangesViewModel.cs" />
     <Compile Include="ViewModel\GraphsViewModel.cs" />
     <Compile Include="ViewModel\HomeViewModel.cs" />
@@ -151,6 +180,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="Models\MoneyDBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MoneyDBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\MoneyDBModel.edmx.diagram">
+      <DependentUpon>MoneyDBModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -159,9 +195,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\change.png" />
@@ -186,6 +219,21 @@
     <Resource Include="Resources\enghun.png" />
     <Resource Include="Resources\moon.png" />
     <Resource Include="Resources\sunmoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\MoneyDBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MoneyDBModel.edmx</DependentUpon>
+      <LastGenOutput>MoneyDBModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MoneyDBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MoneyDBModel.edmx</DependentUpon>
+      <LastGenOutput>MoneyDBModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

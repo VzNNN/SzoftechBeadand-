@@ -8,7 +8,7 @@
         Title="MainWindow" Height="600" Width="800"
         ResizeMode="NoResize"
         Topmost="True"
-        WindowStyle="None"
+        WindowStyle="ToolWindow"
         WindowStartupLocation="CenterScreen">
 
 

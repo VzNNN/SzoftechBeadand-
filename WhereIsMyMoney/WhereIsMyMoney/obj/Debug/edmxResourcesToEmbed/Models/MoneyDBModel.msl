@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WhereIsMyMoneyDBModelStoreContainer" CdmEntityContainer="WhereIsMyMoneyDBEntities">
+    <EntitySetMapping Name="Incomes">
+      <EntityTypeMapping TypeName="WhereIsMyMoneyDBModel.Incomes">
+        <MappingFragment StoreEntitySet="Incomes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Outcomes">
+      <EntityTypeMapping TypeName="WhereIsMyMoneyDBModel.Outcomes">
+        <MappingFragment StoreEntitySet="Outcomes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
