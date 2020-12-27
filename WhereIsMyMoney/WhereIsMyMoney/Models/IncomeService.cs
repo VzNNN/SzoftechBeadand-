@@ -8,7 +8,6 @@ namespace WhereIsMyMoney.Models
    public class IncomeService
     {
         WhereIsMyMoneyDBEntities IncomeEntities;
-
         public IncomeService()
         {
             IncomeEntities = new WhereIsMyMoneyDBEntities();
@@ -23,7 +22,7 @@ namespace WhereIsMyMoney.Models
                                select income;
 
                 foreach (var income in incomes)
-                    IncomesDTOs.Add(new MoneyDTO { Value = (int)income.Value, Type = income.Type, Duration = (int)income.Duration });
+                    IncomesDTOs.Add(new MoneyDTO { Value = (int)income.Value, Type = income.Type, Duration = (int)income.Duration, Total = (int)income.Total});
             }
             catch (Exception ex)
             {
@@ -39,9 +38,9 @@ namespace WhereIsMyMoney.Models
             {
                 var inc = new Incomes();
                 inc.Value = income.Value;
-                inc.Type = income.Type.ToString();
+                inc.Type = income.Type;
                 inc.Duration = income.Duration;
-
+                inc.Total = income.Value * income.Duration;
                 IncomeEntities.Incomes.Add(inc);
                 var NoOfRowsAffected = IncomeEntities.SaveChanges();
                 IsAdded = NoOfRowsAffected > 0;
@@ -53,6 +52,26 @@ namespace WhereIsMyMoney.Models
             }
 
             return IsAdded;
+        }
+
+        public int getTotalIncomes()
+        {
+            List<MoneyDTO> TotalDTOs = new List<MoneyDTO>();
+            int sum;
+            try
+            {
+                var totals = from income in IncomeEntities.Incomes
+                              select income.Total;
+
+                foreach (var total in totals)
+                    TotalDTOs.Add(new MoneyDTO { Total = (int)total.Value });
+                sum = TotalDTOs.Sum(x => x.Total);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return sum;
         }
     }
 }

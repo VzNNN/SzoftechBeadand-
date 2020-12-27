@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="55d50a0aaba34f2db98cc9def56baae3" Name="Diagram1">
+      <Diagram DiagramId="2f6cf290e0e24229bb5dd1bfe6e1d551" Name="Diagram1">
         <EntityTypeShape EntityType="WhereIsMyMoneyDBModel.Incomes" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="WhereIsMyMoneyDBModel.Outcomes" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
       </Diagram>

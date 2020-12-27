@@ -13,6 +13,7 @@
           <Property Name="Value" Type="int" />
           <Property Name="Type" Type="varchar" MaxLength="50" />
           <Property Name="Duration" Type="int" />
+          <Property Name="Total" Type="int" />
         </EntityType>
         <EntityType Name="Outcomes">
           <Key>
@@ -22,6 +23,7 @@
           <Property Name="Value" Type="int" />
           <Property Name="Type" Type="varchar" MaxLength="30" />
           <Property Name="Duration" Type="int" />
+          <Property Name="Total" Type="int" />
         </EntityType>
         <EntityContainer Name="WhereIsMyMoneyDBModelStoreContainer">
           <EntitySet Name="Incomes" EntityType="Self.Incomes" Schema="dbo" store:Type="Tables" />
@@ -40,6 +42,7 @@
           <Property Name="Value" Type="Int32" />
           <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Duration" Type="Int32" />
+          <Property Name="Total" Type="Int32" />
         </EntityType>
         <EntityType Name="Outcomes">
           <Key>
@@ -49,6 +52,7 @@
           <Property Name="Value" Type="Int32" />
           <Property Name="Type" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="Duration" Type="Int32" />
+          <Property Name="Total" Type="Int32" />
         </EntityType>
         <EntityContainer Name="WhereIsMyMoneyDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Incomes" EntityType="Self.Incomes" />
@@ -67,6 +71,7 @@
                 <ScalarProperty Name="Value" ColumnName="Value" />
                 <ScalarProperty Name="Type" ColumnName="Type" />
                 <ScalarProperty Name="Duration" ColumnName="Duration" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -77,6 +82,7 @@
                 <ScalarProperty Name="Value" ColumnName="Value" />
                 <ScalarProperty Name="Type" ColumnName="Type" />
                 <ScalarProperty Name="Duration" ColumnName="Duration" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

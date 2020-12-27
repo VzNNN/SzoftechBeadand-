@@ -8,6 +8,7 @@
           <ScalarProperty Name="Value" ColumnName="Value" />
           <ScalarProperty Name="Type" ColumnName="Type" />
           <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -18,6 +19,7 @@
           <ScalarProperty Name="Value" ColumnName="Value" />
           <ScalarProperty Name="Type" ColumnName="Type" />
           <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

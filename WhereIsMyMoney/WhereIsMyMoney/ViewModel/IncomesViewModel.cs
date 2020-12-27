@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Data.Entity.Validation;
 using WhereIsMyMoney.Models;
-using WhereIsMyMoney.ViewModel.Base;
+using WhereIsMyMoney.Command;
 
 namespace WhereIsMyMoney.ViewModel
 {
@@ -13,11 +13,14 @@ namespace WhereIsMyMoney.ViewModel
         public MoneyDTO CurrentIncome { get; set; }
         public CommandManager addCommand { get; }
         public string Message { get; set; }
+        public int sum { get; set; }
         public IncomesViewModel()
         {
             InSrvc = new IncomeService();
             loadIncomes();
+            loadTotal();
             CurrentIncome = new MoneyDTO();
+            CurrentIncome.Duration = 1;
             addCommand = new CommandManager(Add);
         }
 
@@ -26,6 +29,10 @@ namespace WhereIsMyMoney.ViewModel
             Incomes = new ObservableCollection<MoneyDTO>(InSrvc.getIncomes());
         }
 
+        private void loadTotal() 
+        {
+            sum = InSrvc.getTotalIncomes();
+        }
         public void Add()
         {
             try
@@ -33,20 +40,20 @@ namespace WhereIsMyMoney.ViewModel
                 var IsAdded = InSrvc.AddIncome(CurrentIncome);
                 loadIncomes();
                 if (IsAdded)
-                    Message = "Income has saved successfully";
+                    Message = "Income has saved successfully to the database";
                 else
                     Message = "Save operation failed";
             }
             catch (DbEntityValidationException ex)
             {
-                foreach (var eve in ex.EntityValidationErrors)
+                foreach (var error in ex.EntityValidationErrors)
                 {
                     Console.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
-                           eve.Entry.Entity.GetType().Name, eve.Entry.State);
-                    foreach (var ve in eve.ValidationErrors)
+                           error.Entry.Entity.GetType().Name, error.Entry.State);
+                    foreach (var err in error.ValidationErrors)
                     {
                         Console.WriteLine("- Property: \"{0}\", Error: \"{1}\"",
-                            ve.PropertyName, ve.ErrorMessage);
+                            err.PropertyName, err.ErrorMessage);
                     }
                 }
                 throw;

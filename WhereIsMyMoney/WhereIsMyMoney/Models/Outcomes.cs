@@ -18,5 +18,6 @@ namespace WhereIsMyMoney.Models
         public Nullable<int> Value { get; set; }
         public string Type { get; set; }
         public Nullable<int> Duration { get; set; }
+        public Nullable<int> Total { get; set; }
     }
 }

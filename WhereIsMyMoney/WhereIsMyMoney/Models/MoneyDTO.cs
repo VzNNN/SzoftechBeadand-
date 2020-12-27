@@ -7,5 +7,6 @@ namespace WhereIsMyMoney.Models
         public int Value { get; set; }
         public string Type { get; set; }
         public int Duration { get; set; }
+        public int Total { get; set; }
     }
 }

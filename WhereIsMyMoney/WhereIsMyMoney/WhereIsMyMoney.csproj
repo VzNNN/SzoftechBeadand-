@@ -72,10 +72,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Command\UpdateViewCommand.cs" />
+    <Compile Include="Enums\BindingEnums.cs" />
     <Compile Include="Models\Incomes.cs">
       <DependentUpon>MoneyDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\IncomesEnum.cs" />
+    <Compile Include="Enums\IncomesEnum.cs" />
     <Compile Include="Models\IncomeService.cs" />
     <Compile Include="Models\MoneyDBModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -96,10 +97,10 @@
     <Compile Include="Models\Outcomes.cs">
       <DependentUpon>MoneyDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\OutcomesEnum.cs" />
+    <Compile Include="Enums\OutcomesEnum.cs" />
     <Compile Include="Models\OutcomeService.cs" />
     <Compile Include="ViewModel\Base\BaseViewModel.cs" />
-    <Compile Include="ViewModel\Base\CommandManager.cs" />
+    <Compile Include="Command\CommandManager.cs" />
     <Compile Include="ViewModel\ExchangesViewModel.cs" />
     <Compile Include="ViewModel\GraphsViewModel.cs" />
     <Compile Include="ViewModel\HomeViewModel.cs" />

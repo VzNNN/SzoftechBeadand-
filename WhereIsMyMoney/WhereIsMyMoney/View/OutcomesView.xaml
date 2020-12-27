@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:WhereIsMyMoney.View"
+             xmlns:local="clr-namespace:WhereIsMyMoney.Enums"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <!--Have to remove it just for testing-->
@@ -40,15 +40,13 @@
                    HorizontalAlignment="Center"
                    FontWeight="Bold">Outcomes</Label>
         <TextBox Grid.Row="3"
-                 Grid.Column="1"/>
+                 Grid.Column="1" Text="{Binding Path=CurrentOutcome.Value, Mode=TwoWay}"/>
         <Label Grid.Row="2"
                    Grid.Column="1"
                    FontWeight="Bold">Value:</Label>
         <ComboBox Grid.Row="5"
-                  Grid.Column="1">
-            <ComboBoxItem>ComboBox Item #1</ComboBoxItem>
-            <ComboBoxItem IsSelected="True">ComboBox Item #2</ComboBoxItem>
-            <ComboBoxItem>ComboBox Item #3</ComboBoxItem>
+                  Grid.Column="1" SelectedValue="{Binding Path=CurrentOutcome.Type, Mode=TwoWay}"
+                  ItemsSource="{Binding Source={local:BindingEnums {x:Type local:OutcomesType}}}">
         </ComboBox>
         <Label Grid.Row="4"
                    Grid.Column="1"
@@ -59,21 +57,22 @@
                     Grid.Column="1">
             <Label FontWeight="Bold">Duration in months:</Label>
             <StackPanel Orientation="Vertical">
-                <Slider  Minimum="1" Maximum="12" IsSnapToTickEnabled="True" TickPlacement="BottomRight" TickFrequency="1" Name="slValue" />
+                <Slider  Minimum="1" Maximum="12" IsSnapToTickEnabled="True" TickPlacement="BottomRight" TickFrequency="1" Name="slValue" Value="{Binding Path=CurrentOutcome.Duration, Mode=TwoWay}" />
                 <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" TextAlignment="Right" Width="20" />
             </StackPanel>
         </StackPanel>
         <Button x:Name="bttnSubmit" 
                 Content="Add Outcomes"
                 Grid.Column="1"
-                Grid.Row="9">
+                Grid.Row="9" Command="{Binding Path=addCommand}">
 
         </Button>
+        <Label x:Name="Message" Grid.Column="1" Grid.Row="10" Content="{Binding Path=Message}"/>
         <DataGrid ItemsSource="{Binding Path=Outcomes}" Foreground="Black" Background="LightGray" Width="auto" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" Grid.Column="3" Grid.RowSpan="7">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Value" Binding="{Binding Value}"/>
-                <DataGridTextColumn Header="Type" Binding="{Binding Type}"/>
-                <DataGridTextColumn Header="Duration" Binding="{Binding Duration}"/>
+                <DataGridTextColumn Header="Type of Outcome" Binding="{Binding Type}"/>
+                <DataGridTextColumn Header="For 'x' months" Binding="{Binding Duration}"/>
+                <DataGridTextColumn Header="Monthly" Binding="{Binding Value}"/>
             </DataGrid.Columns>
         </DataGrid>
 

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:local="clr-namespace:WhereIsMyMoney.View"
+             xmlns:local="clr-namespace:WhereIsMyMoney.Enums"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
@@ -47,10 +47,9 @@
                    Grid.Column="1"
                    FontWeight="Bold">Value:</Label>
         <ComboBox Grid.Row="5"
-                  Grid.Column="1" SelectedValuePath="Content" SelectedValue="{Binding Path=CurrentIncome.Type, Mode=TwoWay}">
-            <ComboBoxItem Content="Ösztöndij"/>
-            <ComboBoxItem Content="Támogatás"/>
-            <ComboBoxItem Content="Fizetés"/>
+                  Grid.Column="1" SelectedValue="{Binding Path=CurrentIncome.Type, Mode=TwoWay}"
+            ItemsSource="{Binding Source={local:BindingEnums {x:Type local:IncomesType}}}">
+            
         </ComboBox>
         <Label Grid.Row="4"
                    Grid.Column="1"
@@ -70,14 +69,13 @@
                 Content="Add Incomes"
                 Grid.Column="1"
                 Grid.Row="9" Command="{Binding Path=addCommand}">
-
         </Button>
         <Label x:Name="Message" Grid.Column="1" Grid.Row="10" Content="{Binding Path=Message}"/>
         <DataGrid ItemsSource="{Binding Path=Incomes}" Foreground="Black" Background="LightGray" Width="auto" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" Grid.Column="3" Grid.RowSpan="7">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Value" Binding="{Binding Path=Value, Mode=TwoWay}"/>
-                <DataGridTextColumn Header="Type" Binding="{Binding Path=Type, Mode=TwoWay}"/>
-                <DataGridTextColumn Header="Duration" Binding="{Binding Path=Duration, Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Type of Income" Binding="{Binding Type}"/>
+                <DataGridTextColumn Header="For 'x' months" Binding="{Binding Duration}"/>
+                <DataGridTextColumn Header="Monthly" Binding="{Binding Value}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
