@@ -10,5 +10,9 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/moneydbmodel.context.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/moneydbmodel.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqlserver/whereismymoneydb.mdf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqlserver/whereismymoneydb_log.ldf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("whereismymoneydb.mdf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("whereismymoneydb_log.ldf")]
 
 

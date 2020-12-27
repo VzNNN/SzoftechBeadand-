@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using System.Data.Entity.Validation;
 using WhereIsMyMoney.Models;
 using WhereIsMyMoney.Command;
 
@@ -9,11 +8,11 @@ namespace WhereIsMyMoney.ViewModel
     public class OutcomesViewModel : BaseViewModel
     {
         public ObservableCollection<MoneyDTO> Outcomes { get; set; }
-        private OutcomeService OutSrvc;
         public MoneyDTO CurrentOutcome { get; set; }
         public CommandManager addCommand { get; }
         public string Message { get; set; }
         public int sum { get; set; }
+        private OutcomeService OutSrvc;
         public OutcomesViewModel()
         {
             OutSrvc = new OutcomeService();
@@ -38,26 +37,16 @@ namespace WhereIsMyMoney.ViewModel
         {
             try
             {
-                var IsAdded = OutSrvc.AddOutcome(CurrentOutcome);
+                var IsAdded = OutSrvc.addOutcome(CurrentOutcome);
                 loadOutcomes();
                 if (IsAdded)
                     Message = "Outcome has saved successfully to the database";
                 else
                     Message = "Save operation failed";
             }
-            catch (DbEntityValidationException ex)
+            catch (Exception ex)
             {
-                foreach (var error in ex.EntityValidationErrors)
-                {
-                    Console.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
-                           error.Entry.Entity.GetType().Name, error.Entry.State);
-                    foreach (var err in error.ValidationErrors)
-                    {
-                        Console.WriteLine("- Property: \"{0}\", Error: \"{1}\"",
-                            err.PropertyName, err.ErrorMessage);
-                    }
-                }
-                throw;
+                Message = ex.Message;
             }
         }
 

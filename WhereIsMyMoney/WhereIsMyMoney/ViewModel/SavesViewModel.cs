@@ -9,9 +9,9 @@ namespace WhereIsMyMoney.ViewModel
         public ObservableCollection<MoneyDTO> Incomes { get; set; }
         public ObservableCollection<MoneyDTO> Outcomes { get; set; }
         public CommandManager calculateCommand { get; }
+        public int MyMoney { get; set; }
         private IncomeService InSrvc;
         private OutcomeService OutSrvc;
-        public int MyMoney { get; set; }
         public SavesViewModel()
         {
             InSrvc = new IncomeService();

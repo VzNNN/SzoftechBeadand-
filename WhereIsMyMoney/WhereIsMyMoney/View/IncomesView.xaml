@@ -47,7 +47,7 @@
                    Grid.Column="1"
                    FontWeight="Bold">Value:</Label>
         <ComboBox Grid.Row="5"
-                  Grid.Column="1" SelectedValue="{Binding Path=CurrentIncome.Type, Mode=TwoWay}"
+                  Grid.Column="1" SelectedIndex="0" SelectedItem="{Binding Path=CurrentIncome.Type, Mode=TwoWay}"
             ItemsSource="{Binding Source={local:BindingEnums {x:Type local:IncomesType}}}">
             
         </ComboBox>

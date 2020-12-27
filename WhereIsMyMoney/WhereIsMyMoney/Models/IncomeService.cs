@@ -31,9 +31,19 @@ namespace WhereIsMyMoney.Models
             return IncomesDTOs;
         }
 
-        public bool AddIncome(MoneyDTO income)
+        public bool addIncome(MoneyDTO income)
         {
             bool IsAdded = false;
+
+            if (income.Value.Equals(0) || income.Value.Equals(""))
+            {
+                throw new ArgumentException("You haven't typed anything in the value field.");
+            }
+            else if (income.Value < 1000)
+            {
+                throw new ArgumentException("Income value must be at least 1000.");
+            }
+
             try
             {
                 var inc = new Incomes();
@@ -45,7 +55,7 @@ namespace WhereIsMyMoney.Models
                 var NoOfRowsAffected = IncomeEntities.SaveChanges();
                 IsAdded = NoOfRowsAffected > 0;
             }
-            catch (SqlException ex)
+            catch (Exception ex)
             {
 
                 throw ex;

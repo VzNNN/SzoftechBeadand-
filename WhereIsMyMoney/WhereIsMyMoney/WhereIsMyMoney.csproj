@@ -18,6 +18,21 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -73,10 +88,10 @@
     </ApplicationDefinition>
     <Compile Include="Command\UpdateViewCommand.cs" />
     <Compile Include="Enums\BindingEnums.cs" />
+    <Compile Include="Enums\IncomesEnum.cs" />
     <Compile Include="Models\Incomes.cs">
       <DependentUpon>MoneyDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Enums\IncomesEnum.cs" />
     <Compile Include="Models\IncomeService.cs" />
     <Compile Include="Models\MoneyDBModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -94,10 +109,10 @@
       <DependentUpon>MoneyDBModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\MoneyDTO.cs" />
+    <Compile Include="Enums\OutcomesEnum.cs" />
     <Compile Include="Models\Outcomes.cs">
       <DependentUpon>MoneyDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Enums\OutcomesEnum.cs" />
     <Compile Include="Models\OutcomeService.cs" />
     <Compile Include="ViewModel\Base\BaseViewModel.cs" />
     <Compile Include="Command\CommandManager.cs" />
@@ -225,6 +240,18 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Models\MoneyDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MoneyDBModel.edmx</DependentUpon>
@@ -234,6 +261,20 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MoneyDBModel.edmx</DependentUpon>
       <LastGenOutput>MoneyDBModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="SQLServer\WhereIsMyMoneyDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SQLServer\WhereIsMyMoneyDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>WhereIsMyMoneyDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="WhereIsMyMoneyDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WhereIsMyMoneyDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>WhereIsMyMoneyDB.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

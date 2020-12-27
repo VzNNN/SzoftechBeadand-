@@ -32,9 +32,18 @@ namespace WhereIsMyMoney.Models
             return OutcomesDTOs;
         }
 
-        public bool AddOutcome(MoneyDTO outcome)
+        public bool addOutcome(MoneyDTO outcome)
         {
             bool IsAdded = false;
+            if (outcome.Value.Equals(0) || outcome.Value.Equals(""))
+            {
+                throw new ArgumentException("You haven't typed anything in the value field.");
+            }
+            else if (outcome.Value < 1000)
+            {
+                throw new ArgumentException("Outcome value must be at least 1000.");
+            }
+
             try
             {
                 var outc = new Outcomes();
@@ -46,7 +55,7 @@ namespace WhereIsMyMoney.Models
                 var NoOfRowsAffected = OutcomeEntities.SaveChanges();
                 IsAdded = NoOfRowsAffected > 0;
             }
-            catch (SqlException ex)
+            catch (Exception ex)
             {
 
                 throw ex;

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WhereIsMyMoney"
+    "\\WhereIsMyMoney",
+    "\\WhereIsMyMoney\\WhereIsMyMoney",
+    "\\WhereIsMyMoney\\WhereIsMyMoney\\ViewModel"
   ],
+  "SelectedNode": "\\WhereIsMyMoney\\WhereIsMyMoney.sln",
   "PreviewInSolutionExplorer": false
 }
